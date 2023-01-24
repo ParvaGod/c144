@@ -14,7 +14,7 @@ camera.set(4 , 480)
 mountain = cv2.imread('mount everest.jpg')
 
 # resizing the mountain image as 640 X 480
-
+mountain.resize(640, 640)
 
 while True:
 
@@ -35,9 +35,9 @@ while True:
         upper_bound = np.array([])
 
         # thresholding image
-
+        frame = cv2.threshold(frame, 1)
         # inverting the mask
-
+        
         # bitwise and operation to extract foreground / person
 
         # final image
